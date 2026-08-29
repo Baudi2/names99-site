@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>99 имён — изучение и запоминание</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600&family=Golos+Text:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600&family=Golos+Text:wght@400;500;600&family=Amiri:wght@700&display=swap">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='25%25' r='85%25'%3E%3Cstop offset='0' stop-color='%235a3d1a'/%3E%3Cstop offset='1' stop-color='%232e2008'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url(%23g)'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='serif' font-size='38' fill='%23e9b949'%3E%D9%A9%D9%A9%3C/text%3E%3C/svg%3E">
   <style>
     :root {
       --bg: #faf6ee; --surface: #fffdf8; --tonal: #f0e7d2; --outline: #e3d9c4;
@@ -16,7 +17,8 @@
     a { color: var(--accent-deep); }
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
     header { padding: 64px 0 40px 0; text-align: center; }
-    .mark { width: 96px; height: 96px; border-radius: 24px; background: linear-gradient(150deg, #c05f10, #8a5a00); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(140, 80, 10, 0.3); }
+    .mark { width: 96px; height: 96px; border-radius: 24px; background: radial-gradient(circle at 30% 25%, #5a3d1a, #2e2008 75%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(46, 32, 8, 0.35); }
+    .mark span { font-family: 'Amiri', serif; font-size: 54px; color: #e9b949; line-height: 1; text-shadow: 0 1px 6px rgba(233, 185, 73, 0.35); }
     h1 { font-family: 'Literata', Georgia, serif; font-size: 40px; font-weight: 600; margin: 20px 0 8px 0; }
     .tagline { font-size: 18px; color: var(--ink2); max-width: 520px; margin: 0 auto; }
     .cta { display: inline-block; margin-top: 28px; background: var(--accent); color: #fffaf0; border-radius: 16px; padding: 16px 32px; font-size: 17px; font-weight: 600; text-decoration: none; box-shadow: 0 3px 10px rgba(140, 80, 10, 0.25); }
@@ -37,14 +39,8 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="mark">
-        <svg width="60" height="60" viewBox="0 0 100 100" aria-hidden="true">
-          <g fill="none" stroke="#fdf3d7" stroke-width="4.5" stroke-linejoin="round">
-            <rect x="22" y="22" width="56" height="56"></rect>
-            <rect x="22" y="22" width="56" height="56" transform="rotate(45 50 50)"></rect>
-          </g>
-          <circle cx="50" cy="50" r="9" fill="#fdf3d7"></circle>
-        </svg>
+      <div class="mark" aria-hidden="true">
+        <span>٩٩</span>
       </div>
       <h1>99 имён</h1>
       <p class="tagline">Приложение для изучения и запоминания 99 имён Аллаха:
