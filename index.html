@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>99 имён — изучение и запоминание</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600&family=Golos+Text:wght@400;500;600&display=swap">
+  <style>
+    :root {
+      --bg: #faf6ee; --surface: #fffdf8; --tonal: #f0e7d2; --outline: #e3d9c4;
+      --ink: #2b2620; --ink2: #6b6355; --ink3: #8b8172;
+      --accent: #b45309; --accent-deep: #8a5a00; --gold: #e9b949;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Golos Text', 'Segoe UI', sans-serif; line-height: 1.6; }
+    a { color: var(--accent-deep); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 64px 0 40px 0; text-align: center; }
+    .mark { width: 96px; height: 96px; border-radius: 24px; background: linear-gradient(150deg, #c05f10, #8a5a00); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(140, 80, 10, 0.3); }
+    h1 { font-family: 'Literata', Georgia, serif; font-size: 40px; font-weight: 600; margin: 20px 0 8px 0; }
+    .tagline { font-size: 18px; color: var(--ink2); max-width: 520px; margin: 0 auto; }
+    .cta { display: inline-block; margin-top: 28px; background: var(--accent); color: #fffaf0; border-radius: 16px; padding: 16px 32px; font-size: 17px; font-weight: 600; text-decoration: none; box-shadow: 0 3px 10px rgba(140, 80, 10, 0.25); }
+    .cta.disabled { background: var(--tonal); color: var(--ink3); box-shadow: none; pointer-events: none; }
+    .cta-note { display: block; margin-top: 10px; font-size: 13px; color: var(--ink3); }
+    h2 { font-family: 'Literata', Georgia, serif; font-size: 24px; font-weight: 600; margin: 48px 0 16px 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+    .card { background: var(--surface); border-radius: 18px; padding: 18px 20px; box-shadow: 0 1px 3px rgba(90, 70, 30, 0.08); }
+    .card b { display: block; font-size: 16px; margin-bottom: 4px; }
+    .card span { font-size: 14px; color: var(--ink2); }
+    ol { padding-left: 22px; margin: 0; }
+    ol li { margin-bottom: 10px; font-size: 15px; }
+    .quiet { background: var(--surface); border-radius: 18px; padding: 20px; font-size: 14px; color: var(--ink2); }
+    footer { padding: 48px 0 40px 0; text-align: center; font-size: 13px; color: var(--ink3); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">
+        <svg width="60" height="60" viewBox="0 0 100 100" aria-hidden="true">
+          <g fill="none" stroke="#fdf3d7" stroke-width="4.5" stroke-linejoin="round">
+            <rect x="22" y="22" width="56" height="56"></rect>
+            <rect x="22" y="22" width="56" height="56" transform="rotate(45 50 50)"></rect>
+          </g>
+          <circle cx="50" cy="50" r="9" fill="#fdf3d7"></circle>
+        </svg>
+      </div>
+      <h1>99 имён</h1>
+      <p class="tagline">Приложение для изучения и запоминания 99 имён Аллаха:
+      справочник с аудио-произношением и тренировки, которые помогают
+      действительно запомнить. На русском. Полностью офлайн.</p>
+      <!-- Когда появится первый APK: замените href на ссылку релиза и уберите класс disabled -->
+      <a class="cta disabled" href="#">Скачать APK — скоро</a>
+      <span class="cta-note">Приложение в разработке; эта страница — для тестировщиков до выхода в Google Play.</span>
+    </header>
+
+    <h2>Что внутри</h2>
+    <div class="grid">
+      <div class="card"><b>Справочник</b><span>Все 99 имён: арабское написание, транслитерация, перевод, значение и аудио от чтеца.</span></div>
+      <div class="card"><b>Тренировки</b><span>Короткие сессии по ~5 минут: восемь типов упражнений — от «что вы слышите?» до письменного перевода и произношения вслух.</span></div>
+      <div class="card"><b>Умные повторения</b><span>Приложение само напоминает имена именно тогда, когда вы начинаете их забывать, и устраивает экзамен после каждых 20 выученных.</span></div>
+      <div class="card"><b>Прогресс и постоянство</b><span>Огонёк за каждый день занятий, календарь по месяцам и карта всех 99 имён — от «нового» до «освоенного».</span></div>
+    </div>
+
+    <h2>Для тестировщиков</h2>
+    <div class="card">
+      <ol>
+        <li>Нажмите «Скачать APK» выше и откройте скачанный файл.</li>
+        <li>Android спросит разрешение на установку из этого источника — разрешите (это стандартный шаг для приложений вне Play, настройка → «Разрешить из этого источника»).</li>
+        <li>Установите и занимайтесь. Обновления будут появляться на этой же странице.</li>
+        <li>Заметили что-то неудобное или сломанное — напишите: [КОНТАКТ — заполнит автор].</li>
+      </ol>
+    </div>
+
+    <h2>Приватность</h2>
+    <div class="quiet">
+      Приложение работает полностью офлайн: не выходит в интернет, не
+      показывает рекламу, не содержит аналитики и не собирает никаких
+      данных. Всё, что вы делаете в приложении, остаётся на вашем
+      устройстве. Микрофон используется только для устных упражнений,
+      распознавание происходит на устройстве, звук не сохраняется и
+      никуда не передаётся.
+    </div>
+
+    <footer>
+      Сделано с заботой · [АВТОР/ГОД — заполнит автор] · Скоро в Google Play
+    </footer>
+  </div>
+</body>
+</html>
