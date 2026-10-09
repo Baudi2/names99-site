@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.github.com; style-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Анкета редактора — 99 Имён</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Анкета редактора</h1>
+      <p class="tagline">Тексты приложения «99 Имён». Правки копятся в очереди и попадают в приложение только после подтверждения автора.</p>
+      <p class="muted"><a href="help/">Как начать: аккаунт, приглашение, токен</a></p>
+    </header>
+
+    <section id="demo-banner" class="banner" hidden>
+      Демо-режим: GitHub не нужен, всё происходит в памяти этой страницы.
+      <button id="demo-merge" class="link">Владелец смержил очередь</button>
+    </section>
+
+    <section id="connect" class="card">
+      <h2>Подключение</h2>
+      <label class="field">
+        <span class="field-label">Токен GitHub</span>
+        <input id="token" type="password" autocomplete="off" placeholder="ghp_…">
+        <small>Хранится только в этом браузере и отправляется только на api.github.com.</small>
+      </label>
+      <label class="check"><input id="remember" type="checkbox"> Запомнить токен в этом браузере (только на своём компьютере; иначе вставляйте каждый раз)</label>
+      <div class="row-actions">
+        <button id="connect-btn" class="primary">Проверить</button>
+      </div>
+      <p id="connect-status" class="status"></p>
+    </section>
+
+    <section id="owner" hidden></section>
+
+    <main id="main" hidden>
+      <nav id="tabs" aria-label="Разделы">
+        <button data-view="names" class="active">Имена</button>
+        <button data-view="texts">Тексты экранов</button>
+        <button data-view="dua">Дуа</button>
+        <button data-view="hadith">Хадисы</button>
+        <button data-view="ayat">Аяты</button>
+      </nav>
+      <div class="layout">
+        <section id="view"></section>
+        <aside id="cart"></aside>
+      </div>
+    </main>
+
+    <footer>Проверка правил и сводка «было → стало» — при каждой отправке; смысл правок проверяет автор перед подтверждением.</footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
